@@ -23,7 +23,7 @@ const Navbar = () => {
     
     return (
         <div className="navbar_main">
-        <div className="netflix_logo">
+        <div className="app_logo">
         <img src={Logo} alt="neflix_logo" height="60px" onClick={()=>{
             homeRedirect();
         }}></img>

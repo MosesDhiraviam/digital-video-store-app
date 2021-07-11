@@ -19,10 +19,13 @@ import {
   Route
 } from "react-router-dom";
 
+import videoContext from "../context/Videocontext";
 
 const App = () => {
 
   const [movies, setMovies] = useState([]);
+  const [shows, setShows] = useState([]);
+  const [offers, setOffers] = useState([]);
 
   useEffect(()=>{
 
@@ -46,6 +49,8 @@ const App = () => {
     <div className="main-container">
     <Router>
       <Switch>
+
+      <videoContext.Provider value={{movies,shows,offers,setMovies,setShows,setOffers}} > 
       <Route exact path="/">
       <NavBar/>
       <Banner/>
@@ -85,6 +90,7 @@ const App = () => {
               <ShowsDetailsPage/>
               <Footer/>
             </Route>
+            </videoContext.Provider>
       </Switch>
       </Router>
     </div>

@@ -2,7 +2,8 @@ import React from 'react'
 import  {Container}  from 'react-bootstrap';
 import ContentDataComponent from "./contentData"
 import "../assets/css/Content.css"
-import {useState,useEffect} from "react";
+import {useEffect,useContext} from "react";
+import videoContext from "../context/Videocontext";
 import Carousel from "react-elastic-carousel";
 
 const Content = () => {
@@ -13,7 +14,7 @@ const Content = () => {
         { width: 0, itemsToShow: 5 , pagination: false}
       ];
 
-    const [offers, setOffers] = useState([]);
+      const {offers,setOffers} = useContext(videoContext);
 
     useEffect(()=>{
   

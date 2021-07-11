@@ -67,10 +67,11 @@ const ShowsDetailsPage = () => {
             <p>Total Ratings: {shows.totalRatings}</p>
             </div>
           </div>
+          
         </Col>
         
          
-          
+       
        
       </Row>
     )

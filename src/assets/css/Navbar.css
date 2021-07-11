@@ -4,7 +4,7 @@
  height: 60px;
  background-color: black;
 }
-.netflix_logo{
+.app_logo{
     display: flex;
     flex-direction: row;
     justify-content: space-between;

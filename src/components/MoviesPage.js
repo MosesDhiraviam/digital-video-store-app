@@ -1,11 +1,12 @@
 import React from 'react'
-import {useState,useEffect} from "react";
 import Card from './Card';
 import "../assets/css/MoviesSection.css"
 import { Link } from 'react-router-dom';
+import {useEffect,useContext} from "react";
+import videoContext from "../context/Videocontext";
 
 const MoviesPage = () => {
-    const [movies, setMovies] = useState([]);
+    const {movies,setMovies} = useContext(videoContext);
 
   useEffect(()=>{
 

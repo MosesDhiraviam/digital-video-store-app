@@ -1,10 +1,10 @@
 import React from 'react';
-
 import Items from "./Items";
 import Card from './Card';
 import "../assets/css/cardholder.css"
 import Carousel from "react-elastic-carousel";
-import {useState,useEffect} from "react";
+import {useEffect,useContext} from "react";
+import videoContext from "../context/Videocontext";
 
 const breakPoints = [
     { width: 1, itemsToShow: 1 , pagination: false},
@@ -14,7 +14,7 @@ const breakPoints = [
   ];
 
 const FeaturedTvShows = () => {
-    const [shows, setShows] = useState([]);
+    const {shows,setShows} = useContext(videoContext);
 
     useEffect(()=>{
   
