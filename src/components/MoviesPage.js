@@ -33,7 +33,7 @@ const MoviesPage = () => {
 
             <h1>Movies </h1>
 
-            <div className="grid grid-gap-1 grid-row-gap-2 grid-col-4">
+            <div className="movie-table">
 
             {movies.map((movie)=>( <Link to={`movies/${movie.id}`}>
                                         <Card key={movie.id} id={movie.id}  name={movie.title} imgs={movie.image}  />
