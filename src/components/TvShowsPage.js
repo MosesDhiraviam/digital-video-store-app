@@ -1,11 +1,12 @@
 import React from 'react'
-import {useState,useEffect} from "react";
 import Card from './Card';
 import "../assets/css/MoviesSection.css"
 import { Link } from 'react-router-dom';
+import {useEffect,useContext} from "react";
+import videoContext from "../context/Videocontext";
 
 const TvShowsPage = () => {
-    const [shows, setshows] = useState([]);
+    const {shows,setShows} = useContext(videoContext);
 
     useEffect(()=>{
   
@@ -16,7 +17,7 @@ const TvShowsPage = () => {
         })
         .then(json=>{    
          
-              setshows(json);
+              setShows(json);
         })
         .catch((err)=>{
             console.log(`Error ${err}`);
