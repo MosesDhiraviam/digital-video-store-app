@@ -23,14 +23,8 @@ const Footer = () => {
                         <li className ="content_li"><a  className="links" href="/tvShowspage">Tv Shows Section</a></li>
                     </ul>
                 </div>
-<div className="foot_div3">
-                    <ul className ="foot_ul3">
-                    <li  className ="content_li"><a  className="links" href="/">Help Centre</a></li>
-                        <li className ="content_li"><a   className="links" href="/">Jobs</a></li>
-                        <li className ="content_li"><a  className="links" href="/">Cookie Preferences</a></li>
-                        <li className ="content_li"><a  className="links" href="/">Legal Notices</a></li> 
-                    </ul>
-                </div>
+
+                
 <div className="foot_div4">
                     <ul className ="foot_ul4">
                         <li className ="content_li"><a  className="links" href="https://www.linkedin.com/in/moses-dhiraviam/">Linked In</a></li>
