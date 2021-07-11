@@ -39,13 +39,13 @@
 }
 .moviesSection-btn{
     margin-left: 10em;
-    background-color: rgb(2, 2, 2);
+    background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   width: 200px;
   border: 2px solid #000000; /* Green */
 }
 .tvshowsSection-btn{
-    background-color: rgb(2, 2, 2);
+    background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   width: 200px;
   border: 2px solid #000000; /* Green */
