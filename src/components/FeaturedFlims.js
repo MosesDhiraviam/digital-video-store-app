@@ -1,9 +1,10 @@
 import React from 'react';
+
+import Items from "./Items";
 import Card from './Card';
 import "../assets/css/cardholder.css"
 import Carousel from "react-elastic-carousel";
-import {useEffect,useContext} from "react";
-import videoContext from "../context/Videocontext";
+import {useState,useEffect} from "react";
 
 const breakPoints = [
     { width: 1, itemsToShow: 1 , pagination: false},
@@ -14,18 +15,18 @@ const breakPoints = [
 
 const FeaturedFlims = () => {
 
-    const {movies,setMovies} = useContext(videoContext);
+    const [movies, setMovies] = useState([]);
 
   useEffect(()=>{
 
-      fetch("http://localhost:5000/movies?featured=true")
+      fetch("http://localhost:5000/movies")
       .then((res)=>{
 
         return res.json()
       })
       .then(json=>{    
-       
-            setMovies(json);
+        const newMovie= json.filter((jsn)=>{return jsn.featured===true})
+            setMovies(newMovie);
       })
       .catch((err)=>{
           console.log(`Error ${err}`);

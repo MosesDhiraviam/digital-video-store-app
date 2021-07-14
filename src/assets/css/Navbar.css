@@ -9,7 +9,7 @@
     flex-direction: row;
     justify-content: space-between;
     height: 60px;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 .nav_right{
     position: static;
@@ -38,15 +38,15 @@
     color: white;
 }
 .moviesSection-btn{
-    margin-left: 10em;
+    margin-left:    0em;
     background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   width: 200px;
-  border: 2px solid #000000; /* Green */
+  border: 2px solid #000000; 
 }
 .tvshowsSection-btn{
     background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   width: 200px;
-  border: 2px solid #000000; /* Green */
+  border: 2px solid #000000; 
 }

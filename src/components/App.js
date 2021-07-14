@@ -1,3 +1,14 @@
+
+/*
+git repo link - https://github.com/MosesDhiraviam/digital-video-store-app/tree/master
+hroku link - https://digital-video-store-app.herokuapp.com/
+*/
+
+
+
+
+
+
 import React from 'react'
 import NavBar from "./Navbar"
 import Banner from "./Banner"
