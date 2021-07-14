@@ -1,8 +1,11 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import "../assets/css/Form.css"
+import { useHistory } from "react-router-dom";
 
-const login = () => {
+const Login = () => {
+
+    let history = useHistory();
     const refreshPage = () => {
         window.location.reload();
     }
@@ -10,7 +13,9 @@ const login = () => {
         <>
             
             <div className="loginCreateAccount">
-                <p>Don't have an account yet? Please <a href="/registerPage">sign up</a> to create an account.</p>
+                <p>Don't have an account yet? Please <a onClick={()=>{
+                    history.push("/registerPage");
+                }}>sign up</a> to create an account.</p>
             </div>
             <div className="loginContainer">
             <h1>
@@ -23,9 +28,11 @@ const login = () => {
                 <input type="password" placeholder="Enter Password" name="psw" required /><br></br>
 
 
-                <Link to="/">
-                    <button type="submit">LOGIN</button><br></br>
-                </Link>
+                
+                    <button type="submit" onClick={()=>{
+                        history.push("/");
+                    }}>LOGIN</button><br></br>
+                
                 <p>
                     <a href="#">Reset Password</a>
                 </p>
@@ -37,4 +44,4 @@ const login = () => {
     )
 }
 
-export default login
+export default Login
