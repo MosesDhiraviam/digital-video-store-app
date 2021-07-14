@@ -40,7 +40,7 @@ const Content = () => {
     return (
         <section id="content">
             <div>
-                <h3 className="pop_nf_h3">Hot Offers</h3>
+                <h3 className="pop_nf_h3">Content: Hot Offers</h3>
             </div>
         <Container>
         <Carousel  breakPoints={breakPoints} pagination="false" >
